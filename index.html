@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111213">
+  <meta name="description" content="Arc is a free, open-source media server for your movies, shows and home videos. Run it at home and watch on your TV.">
+  <title>Arc Media Server</title>
+  <link rel="icon" href="assets/arc-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="./" aria-label="Arc Media Server home"><img src="assets/arc-logo.svg" width="140" height="43" alt="Arc Media Server"></a>
+    <nav aria-label="Main navigation">
+      <a href="#experience">Features</a>
+      <a href="#apps">Apps</a>
+      <a href="https://github.com/arc-media-server/arc-media-server">GitHub</a>
+    </nav>
+    <a class="button small nav-cta" href="#get-started">Get started</a>
+  </header>
+  <main id="content">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Your library.<br><span>On your TV.</span></h1>
+        <p>Arc organises the films, shows and home videos you already own. Run it on your own server and settle in with the Arc app.</p>
+        <div class="actions">
+          <a class="button primary" href="#get-started">Set up Arc</a>
+          <a class="button" href="#apps">Explore the apps</a>
+        </div>
+        <p class="availability">Free and open source <span aria-hidden="true">·</span> In alpha</p>
+      </div>
+      <figure class="hero-screen">
+        <div class="screen">
+          <img src="assets/tv-home.webp" width="1280" height="720" fetchpriority="high" alt="Arc Home on Apple TV, with Severance and a Continue Watching row">
+        </div>
+        <figcaption><span class="caption-line"></span> Arc on Apple TV <span class="caption-detail">Simulator capture</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="feature wrap" id="experience" aria-labelledby="experience-title">
+      <div class="feature-media">
+        <img src="assets/server-home.webp" width="1500" height="938" loading="lazy" alt="Arc’s web Home with the library sidebar, The Office and Continue Watching">
+      </div>
+      <div class="feature-copy">
+        <h2 id="experience-title">Set it up in your browser.</h2>
+        <p>Point Arc at your media folders. It finds titles, brings in artwork and gets them ready to browse while the scan runs. Your files stay where they are.</p>
+        <ul class="details">
+          <li>Pick up where you left off on another screen.</li>
+          <li>Give each person their own profile and watch history.</li>
+          <li>Share just the libraries you choose.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="feature feature-order wrap" aria-labelledby="ordering-title">
+      <div class="feature-copy">
+        <h2 id="ordering-title">Watch in the order you choose.</h2>
+        <p>Keep the numbering on disk and choose how a show appears in Arc. Switch between available aired, DVD and alternate orders, or arrange episodes yourself.</p>
+        <p class="detail">Compare orders before switching. Arc keeps your files and watch history in place.</p>
+      </div>
+      <div class="feature-media">
+        <img src="assets/tv-show-episodes.webp" width="1280" height="720" loading="lazy" alt="Season one of Severance in the Arc Apple TV app">
+      </div>
+    </section>
+
+    <section class="install" id="get-started" aria-labelledby="install-title">
+      <div class="wrap install-grid">
+        <div class="install-copy">
+          <h2 id="install-title">Start with<br>your server.</h2>
+          <p>Run Arc on a computer or NAS that can access your media. Open the web app to add a library, then connect a player on your TV.</p>
+          <a class="button primary" href="https://github.com/arc-media-server/arc-media-server#running-with-docker">Docker quickstart</a>
+          <p class="detail">Linux Docker image for x86-64 and Arm64. The web player comes with the server.</p>
+        </div>
+        <div class="apps" id="apps">
+          <h3>Choose your player</h3>
+          <p class="detail">The apps are in alpha. Installation steps vary by platform.</p>
+          <ul class="platforms">
+            <li><a href="https://github.com/arc-media-server/arc-android/releases"><span><strong>Android TV &amp; Google TV</strong><small>Download a preview APK to sideload</small></span><span class="pill">Releases</span></a></li>
+            <li><a href="https://github.com/arc-media-server/arc-apple#installing"><span><strong>Apple TV</strong><small>Build with Xcode on a Mac</small></span><span class="pill">Setup</span></a></li>
+            <li><a href="https://github.com/arc-media-server/arc-tv"><span><strong>LG &amp; Samsung TVs</strong><small>webOS and Tizen installation</small></span><span class="pill">Setup</span></a></li>
+            <li><a href="https://github.com/arc-media-server/arc-roku#installing"><span><strong>Roku</strong><small>Sideload in developer mode</small></span><span class="pill">Setup</span></a></li>
+            <li><a href="https://github.com/arc-media-server/arc-kodi"><span><strong>Kodi</strong><small>Install the Arc add-on</small></span><span class="pill">Setup</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <div>
+      <a class="brand" href="./" aria-label="Arc Media Server home"><img src="assets/arc-logo.svg" width="140" height="43" alt="Arc Media Server" loading="lazy"></a>
+      <p>Artwork and details from <a href="https://www.themoviedb.org/">TMDB</a>. Arc doesn’t include any media.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="https://github.com/arc-media-server/arc-media-server/issues">Support</a>
+      <a href="privacy.html">Website privacy</a>
+      <a href="https://github.com/arc-media-server">GitHub</a>
+    </nav>
+  </footer>
+</body>
+</html>
