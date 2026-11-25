@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111213">
+  <meta name="description" content="Answers to common Arc setup and playback questions and ways to get support.">
+  <title>FAQ &amp; support · Arc Media Server</title>
+  <link rel="icon" href="../assets/arc-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="../" aria-label="Arc Media Server home"><img src="../assets/arc-logo.svg" width="140" height="43" alt="Arc Media Server"></a>
+    <nav aria-label="Main navigation">
+      <a href="../apps/">Apps</a>
+      <a href="../roadmap/">Roadmap</a>
+      <a href="../support/" aria-current="page">FAQ &amp; support</a>
+    </nav>
+    <a class="button small nav-cta" href="../#get-started">Get started</a>
+  </header>
+  <main id="content">
+    <section class="wrap page-intro">
+      <h1>FAQ &amp; support</h1>
+      <p>Get answers before you install, or tell us what happened if something isn’t working.</p>
+    </section>
+    <section class="wrap faq" aria-label="Frequently asked questions">
+      <details>
+        <summary>What do I need to run Arc?</summary>
+        <p>Arc’s Docker image runs on Linux x86-64 and Arm64. Run it on a computer or NAS that can read your media and keep Arc’s data on local storage. Follow the <a href="https://github.com/arc-media-server/arc-media-server#running-with-docker">Docker quickstart</a>.</p>
+      </details>
+      <details>
+        <summary>Do I need TMDB or TheTVDB API keys?</summary>
+        <p>You can add and play files without keys using filenames and local artwork. Configure a provider key if you want Arc to look up titles and fetch its metadata or artwork.</p>
+      </details>
+      <details>
+        <summary>Will Arc change my media files?</summary>
+        <p>Arc reads your files. It keeps library data, watch history and settings separately. You can mount media folders read-only in Docker.</p>
+      </details>
+      <details>
+        <summary>Can I try Arc alongside my current server?</summary>
+        <p>Yes. Give Arc its own data folder and, if needed, a different port. Start with a small library of files you already have and mount it read-only.</p>
+      </details>
+      <details>
+        <summary>How does remote access work?</summary>
+        <p>People outside your home need a reachable Arc server address. Configure secure remote access or an HTTPS reverse proxy, then use Arc’s invite flow to share selected libraries.</p>
+      </details>
+      <details>
+        <summary>Which TV apps can I install?</summary>
+        <p>Visit <a href="../apps/">Apps</a> for screenshots and current installation steps. Availability varies by platform while Arc is in alpha.</p>
+      </details>
+      <details>
+        <summary>Which database should I choose?</summary>
+        <p>SQLite is the default and needs no separate database server. PostgreSQL is an option during first-time setup. Existing installations keep their database engine.</p>
+      </details>
+    </section>
+    <section class="wrap support-panel" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Need a hand?</h2>
+      <p>Tell us your Arc version, the device you’re using, and what happened. GitHub issues are public, so keep credentials and private server addresses out of your report.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/arc-media-server/arc-media-server/issues/new">Report a bug</a>
+        <a class="button" href="mailto:support@arcmediaserver.org">Email support</a>
+      </div>
+      <p class="detail"><a href="mailto:support@arcmediaserver.org">support@arcmediaserver.org</a></p>
+    </section>
+  </main>
+  <footer class="wrap footer">
+    <div>
+      <a class="brand" href="../" aria-label="Arc Media Server home"><img src="../assets/arc-logo.svg" width="140" height="43" alt="Arc Media Server" loading="lazy"></a>
+      <p>Artwork and details from <a href="https://www.themoviedb.org/">TMDB</a>. Arc doesn’t include any media.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="../support/">Support</a>
+      <a href="../privacy.html">Website privacy</a>
+      <a href="https://github.com/arc-media-server">GitHub</a>
+    </nav>
+  </footer>
+</body>
+</html>

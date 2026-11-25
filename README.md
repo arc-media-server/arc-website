@@ -11,7 +11,7 @@ See [custom-domain setup](https://docs.github.com/en/pages/configuring-a-custom-
 Keep the private reviewer demo separate from the website.
 
 The site uses Arc branding from the server repository and screenshots from the server
-and Apple TV repositories. These product captures contain TMDB artwork. Confirm artwork
+and client repositories. These product captures contain TMDB artwork. Confirm artwork
 permissions for the public site or replace those captures with equivalent demo captures
 using cleared artwork before publishing. Inter is bundled under the SIL Open Font License.
 

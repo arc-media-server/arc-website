@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111213">
+  <meta name="description" content="See what has shipped, what Arc is improving, and what is planned for later.">
+  <title>Roadmap · Arc Media Server</title>
+  <link rel="icon" href="../assets/arc-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="../" aria-label="Arc Media Server home"><img src="../assets/arc-logo.svg" width="140" height="43" alt="Arc Media Server"></a>
+    <nav aria-label="Main navigation">
+      <a href="../apps/">Apps</a>
+      <a href="../roadmap/" aria-current="page">Roadmap</a>
+      <a href="../support/">FAQ &amp; support</a>
+    </nav>
+    <a class="button small nav-cta" href="../#get-started">Get started</a>
+  </header>
+  <main id="content">
+    <section class="wrap page-intro">
+      <h1>Roadmap</h1>
+      <p>See what’s available in the alpha, what we’re improving, and what’s further out. Follow the GitHub issues for status and discussion.</p>
+      <div class="actions">
+        <a class="button primary" href="https://github.com/arc-media-server/arc-media-server/issues/new?title=Feature%20request%3A%20">Request a feature</a>
+        <a class="button" href="https://github.com/arc-media-server/arc-media-server/blob/main/ROADMAP.md">Full server roadmap</a>
+      </div>
+    </section>
+    <div class="wrap roadmap-board">
+      <section class="roadmap-column" aria-labelledby="phase-0">
+        <h2 id="phase-0">Available now</h2>
+        <ul>
+          <li>
+            <h3>Run Arc at home</h3>
+            <p>Docker for x86-64 and Arm64, with a web player and SQLite by default.</p>
+            <a href="https://github.com/arc-media-server/arc-media-server#running-with-docker">Server setup</a>
+          </li>
+          <li>
+            <h3>Keep your episode order</h3>
+            <p>Separate file numbering from display order and set a different order for a show.</p>
+            <a href="https://github.com/arc-media-server/arc-media-server/blob/main/docs/METADATA-ORDERING.md">Episode ordering</a>
+          </li>
+          <li>
+            <h3>Watch on TV</h3>
+            <p>Alpha apps for Apple TV, Android TV, LG and Samsung TVs, Roku and Kodi.</p>
+            <a href="../apps/">Browse apps</a>
+          </li>
+        </ul>
+      </section>
+      <section class="roadmap-column" aria-labelledby="phase-1">
+        <h2 id="phase-1">In progress</h2>
+        <ul>
+          <li>
+            <h3>First-run guidance</h3>
+            <p>Make it easier to go from a new server to your first playable library.</p>
+            <a href="https://github.com/arc-media-server/arc-media-server/issues/436">Setup discussion</a>
+          </li>
+          <li>
+            <h3>Client reliability</h3>
+            <p>Close gaps in playback, session handling and error feedback across apps.</p>
+            <a href="https://github.com/arc-media-server/arc-media-server/issues/486">Reliability tracker</a>
+          </li>
+          <li>
+            <h3>Release readiness</h3>
+            <p>Gather evidence for each release candidate and expand real-device coverage.</p>
+            <a href="https://github.com/arc-media-server/arc-media-server/blob/main/docs/ALPHA-CHECKLIST.md">Release checklist</a>
+          </li>
+        </ul>
+      </section>
+      <section class="roadmap-column" aria-labelledby="phase-2">
+        <h2 id="phase-2">Later</h2>
+        <ul>
+          <li>
+            <h3>Offline playback in the apps</h3>
+            <p>Original downloads are available on the server. App support, offline progress and converted downloads are still ahead.</p>
+            <a href="https://github.com/arc-media-server/arc-media-server/issues/62">Downloads tracker</a>
+          </li>
+          <li>
+            <h3>Move an existing database</h3>
+            <p>SQLite-to-PostgreSQL migration is deferred. New installs can already choose PostgreSQL.</p>
+            <a href="https://github.com/arc-media-server/arc-media-server/issues/308">Migration discussion</a>
+          </li>
+          <li>
+            <h3>More interface languages</h3>
+            <p>The web app has translation groundwork. Non-English translations and a language picker are future work.</p>
+            <a href="https://github.com/arc-media-server/arc-media-server/blob/main/docs/TRANSLATION.md">Translation guide</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="wrap footer">
+    <div>
+      <a class="brand" href="../" aria-label="Arc Media Server home"><img src="../assets/arc-logo.svg" width="140" height="43" alt="Arc Media Server" loading="lazy"></a>
+      <p>Artwork and details from <a href="https://www.themoviedb.org/">TMDB</a>. Arc doesn’t include any media.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="../support/">Support</a>
+      <a href="../privacy.html">Website privacy</a>
+      <a href="https://github.com/arc-media-server">GitHub</a>
+    </nav>
+  </footer>
+</body>
+</html>
