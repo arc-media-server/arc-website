@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>Arc</title>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#1C1D22"/><stop offset="1" stop-color="#000"/></linearGradient></defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g transform="translate(76,76) scale(7.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="5" y="10" width="38" height="24" rx="5" stroke-width="3.2"/>
+    <path d="M13,34l-2,5M35,34l2,5" stroke-width="3.2"/>
+    <path d="M17.2,25.6a6.8,6.8 0 0 1 13.6,0" stroke-width="2.8"/>
+    <circle cx="24" cy="25.6" r="1.6" fill="#fff" stroke="none"/>
+  </g>
+</svg>
