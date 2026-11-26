@@ -28,14 +28,17 @@ p { color: var(--muted); }
 .wrap { width: 100%; max-width: 94rem; padding-inline: var(--gutter); margin-inline: auto; }
 .skip { position: absolute; z-index: 2; top: 1rem; left: 1rem; background: var(--ink); color: var(--bg); padding: .6rem 1rem; transform: translateY(-200%); }
 .skip:focus { transform: none; }
-.header { min-height: 5.75rem; display: flex; align-items: center; gap: 2rem; justify-content: space-between; }
+.header { position: relative; min-height: 5.75rem; display: flex; align-items: center; gap: .85rem; }
+.header-links { flex: 1; display: flex; align-items: center; gap: 1rem; }
+.header-links nav:first-child { margin-inline: auto; }
+.nav-toggle { display: none; }
 .brand { flex: none; display: inline-block; }
 .brand img { width: 8.75rem; }
 nav { display: flex; gap: clamp(1rem, 3vw, 2.3rem); align-items: center; flex-wrap: wrap; }
 nav a { text-decoration: none; color: var(--muted); font-size: .9375rem; }
 nav a:hover { color: var(--ink); }
 .header .header-actions { flex-wrap: nowrap; gap: .85rem; }
-.header-actions .button { color: var(--ink); white-space: nowrap; }
+.header-cta { white-space: nowrap; }
 .button { display: inline-flex; align-items: center; justify-content: center; padding: .75rem 1.2rem; min-height: 3rem; font-size: .9375rem; font-weight: 650; line-height: 1.3; text-decoration: none; border: 1px solid #515358; border-radius: .6rem; }
 .button:hover { background: #27292d; }
 .button.primary { background: var(--ink); color: #151617; border-color: var(--ink); }
@@ -81,9 +84,47 @@ h3 { font-size: clamp(1.55rem, 2.3vw, 2.05rem); font-weight: 680; }
   .hero h1 { font-size: clamp(2.85rem, 6vw, 4.5rem); }
   .feature { gap: 2rem; }
 }
+@media (max-width: 760px) {
+  .header { min-height: 4.7rem; flex-wrap: wrap; gap: .65rem; padding-block: .75rem; }
+  .header .brand { margin-inline-end: auto; }
+  .header .brand img { width: clamp(5.5rem, 26vw, 7rem); }
+  .header-cta.button.small { min-height: 2.75rem; }
+  .header-links { flex: 1 0 100%; flex-wrap: wrap; }
+  .header-links nav:first-child { margin-inline: 0; }
+  .header .nav-toggle:not([hidden]) {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    color: var(--ink);
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: .6rem;
+    cursor: pointer;
+  }
+  .nav-toggle:hover, .nav-toggle[aria-expanded="true"] { background: var(--panel); }
+  .nav-toggle:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+  .nav-toggle-icon { width: 1.125rem; height: .75rem; border-block: 2px solid; position: relative; }
+  .nav-toggle-icon::before { content: ""; position: absolute; inset: 50% 0 auto; border-top: 2px solid; transform: translateY(-50%); }
+  .nav-toggle:not([hidden]) + .header-links {
+    position: absolute;
+    z-index: 1;
+    inset: 100% var(--gutter) auto;
+    display: block;
+    padding: .5rem;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: .75rem;
+    box-shadow: 0 12px 30px #0008;
+  }
+  .nav-toggle[aria-expanded="false"]:not([hidden]) + .header-links { display: none; }
+  .nav-toggle:not([hidden]) + .header-links nav { display: grid; gap: 0; }
+  .nav-toggle:not([hidden]) + .header-links .header-actions { border-top: 1px solid var(--line); }
+  .nav-toggle:not([hidden]) + .header-links a { display: flex; align-items: center; min-height: 2.75rem; padding-inline: .75rem; border-radius: .4rem; }
+  .nav-toggle:not([hidden]) + .header-links a:hover { background: #27292d; }
+}
 @media (max-width: 720px) {
-  .header { min-height: 4.7rem; flex-wrap: wrap; gap: .65rem 1rem; padding-block: .75rem; }
-  .header nav { gap: .9rem; }
   .brand img { width: 7rem; }
   .hero, .feature, .feature-order, .install-grid { grid-template-columns: minmax(0, 1fr); }
   .hero { gap: 2.3rem; }
@@ -94,8 +135,6 @@ h3 { font-size: clamp(1.55rem, 2.3vw, 2.05rem); font-weight: 680; }
   .feature-copy { grid-row: 1; }
 }
 @media (max-width: 365px) {
-  .header nav { gap: .55rem; }
-  .header nav a { font-size: .875rem; }
   .brand img { width: 6rem; }
   .caption-detail { margin-inline-start: 0; }
 }
@@ -183,6 +222,5 @@ h3 { font-size: clamp(1.55rem, 2.3vw, 2.05rem); font-weight: 680; }
   .mission, .roadmap-board { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 540px) {
-  .header { align-items: flex-start; flex-direction: column; justify-content: center; padding-block: .85rem; gap: .55rem; }
   .gallery-grid, .gallery-grid[data-count="3"] { grid-template-columns: minmax(0, 1fr); }
 }
