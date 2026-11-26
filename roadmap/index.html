@@ -8,21 +8,27 @@
   <title>Roadmap · Arc Media Server</title>
   <link rel="icon" href="../assets/arc-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../style.css">
+  <script src="../navigation.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header class="header wrap">
     <a class="brand" href="../" aria-label="Arc Media Server home"><img src="../assets/arc-logo.svg" width="140" height="43" alt="Arc Media Server"></a>
-    <nav aria-label="Main navigation">
-      <a href="../apps/">Apps</a>
-      <a href="../roadmap/" aria-current="page">Roadmap</a>
-      <a href="../support/">FAQ &amp; support</a>
-    </nav>
-    <nav class="header-actions" aria-label="Project links">
-      <a href="https://github.com/arc-media-server/arc-media-server">GitHub</a>
-      <a href="https://discord.gg/wtJKFSrkAP">Discord</a>
-      <a class="button small" href="../#get-started">Get started</a>
-    </nav>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="header-links" hidden>
+      <span class="nav-toggle-icon" aria-hidden="true"></span>
+    </button>
+    <div class="header-links" id="header-links">
+      <nav aria-label="Main navigation">
+        <a href="../apps/">Apps</a>
+        <a href="../roadmap/" aria-current="page">Roadmap</a>
+        <a href="../support/">FAQ &amp; support</a>
+      </nav>
+      <nav class="header-actions" aria-label="Project links">
+        <a href="https://github.com/arc-media-server/arc-media-server">GitHub</a>
+        <a href="https://discord.gg/wtJKFSrkAP">Discord</a>
+      </nav>
+    </div>
+    <a class="button small header-cta" href="../#get-started">Get started</a>
   </header>
   <main id="content">
     <section class="wrap page-intro">
