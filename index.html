@@ -6,6 +6,17 @@
   <meta name="theme-color" content="#111213">
   <meta name="description" content="Arc is a free, open-source media server for your movies, shows and home videos. Run it at home and watch on your TV.">
   <title>Arc Media Server</title>
+  <link rel="canonical" href="https://arcmediaserver.org/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Arc Media Server">
+  <meta property="og:url" content="https://arcmediaserver.org/">
+  <meta property="og:title" content="Arc Media Server">
+  <meta property="og:description" content="Arc is a free, open-source media server for your movies, shows and home videos. Run it at home and watch on your TV.">
+  <meta property="og:image" content="https://arcmediaserver.org/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Arc Media Server: Your library. On your TV. Shown beside Arc's Home screen on Google TV.">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/arc-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
   <script src="navigation.js" defer></script>
@@ -111,8 +122,15 @@
         </div>
         <div class="apps" id="apps">
           <h3>Choose your player</h3>
-          <p>Explore Arc on Apple TV, Android TV and Google TV, LG and Samsung TVs, Roku, and Kodi. See screenshots and check the installation steps for your device.</p>
-          <a class="button" href="apps/">See all apps</a>
+          <p>Arc has apps for the TVs and players people already have. See screenshots and installation steps for your device.</p>
+          <ul class="platforms">
+            <li><a href="apps/#apple"><strong>Apple TV</strong><span>tvOS 18+</span></a></li>
+            <li><a href="apps/#android"><strong>Android TV &amp; Google TV</strong><span>Android 8.0+</span></a></li>
+            <li><a href="apps/#smart-tv"><strong>LG &amp; Samsung TVs</strong><span>webOS&nbsp;4.5+ · Tizen&nbsp;5.5+</span></a></li>
+            <li><a href="apps/#roku"><strong>Roku</strong><span>Players and Roku TVs</span></a></li>
+            <li><a href="apps/#kodi"><strong>Kodi</strong><span>Kodi 19+</span></a></li>
+            <li><a href="apps/" class="platforms-all"><strong>See all apps</strong><span>Screenshots and setup</span></a></li>
+          </ul>
         </div>
       </div>
     </section>
